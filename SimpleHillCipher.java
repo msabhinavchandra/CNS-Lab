@@ -56,7 +56,7 @@ public class SimpleHillCipher {
         int[][] invKey = inverseKey(key);
         int[] dVec = multiply(invKey, cVec);
         // Convert vector to string directly
-        String decrypted = "" + (char)(dVec[0] + 'A') + (char)(dVec[1] + 'A');
+        String decrypted = "" + (char)(dVec[0] + 'A') + (char)(dVec[1] + 'A'); 
         System.out.println("Decrypted: " + decrypted);
 
         sc.close();
